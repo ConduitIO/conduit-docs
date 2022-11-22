@@ -1,5 +1,7 @@
 # Table of contents
 
-* [conduit-docs](README.md)
-* [Getting Started](getting-started.md)
-* [Architecture](architecture.md)
+## Introduction
+
+* [Getting Started](README.md)
+* [Architecture](introduction/architecture.md)
+* [Glossary](introduction/glossary.md)
