@@ -1,13 +1,11 @@
 # Architecture
 
-
-
 Here is an overview of the Conduit Architecture.
 
-Conduit is split in the following layers:
+Conduit is split into the following layers:
 
 * **API layer** - exposes the public APIs used to communicate with Conduit. It exposes 2 types of APIs:
-  * **gRPC** - this is the main API provided by Conduit. The gRPC API definition can be found in api.proto, it can be used to generate code for the client.
+  * **gRPC** - this is the main API provided by Conduit. The gRPC API definition can be found in [api.proto](https://github.com/ConduitIO/conduit/blob/main/proto/api/v1/api.proto), it can be used to generate code for the client.
   * **HTTP** - the HTTP API is generated using [grpc-gateway](https://github.com/grpc-ecosystem/grpc-gateway) and forwards the requests to the gRPC API. Conduit exposes an openapi definition that describes the HTTP API, which is also exposed through Swagger UI on `http://localhost:8080/openapi/`.
 * **Orchestration layer** - the orchestration layer is responsible for coordinating the flow of operations between the core services. It also takes care of transactions, making sure that changes made to specific entities are not visible to the outside until the whole operation succeeded. There are 3 orchestrators, each responsible for actions related to one of the 3 main entities - pipelines, connectors and processors.
 * **Core** - we regard the core to be the combination of the entity management layer and the pipeline engine. It provides functionality to the orchestrator layer and does not concern itself with where requests come from and how single operations are combined into more complex flows.
@@ -18,6 +16,6 @@ Conduit is split in the following layers:
   * **Pipeline Engine** - the pipeline engine consists of nodes that can be connected together with Go channels to form a data pipeline.
     * **Node** - a node is a lightweight component that runs in its own goroutine and runs as long as the incoming channel is open. As soon as the previous node stops forwarding records and closes its out channel, the current node also stops running and closes its out channel. This continues down the pipeline until all records are drained and the pipeline gracefully stops. In case a node experiences an error all other nodes will be notified and stop running as soon as possible without draining the pipeline.
 * **Persistence** - this layer is used directly by the orchestration layer and indirectly by the core layer (through stores) to persist data. It provides the functionality of creating transactions and storing, retrieving and deleting arbitrary data like configurations or state.
-*   **Plugins** - while this is not a layer in the same sense as the other layers, it is a component separate from everything else. It interfaces with the connector on one side and with Conduit plugins on the other and facilitates the communication between them. A Conduit plugin is a separate process that implements the interface defined in [plugins.proto](https://github.com/ConduitIO/conduit/blob/main/pkg/plugins/proto/plugins.proto) and provides the read/write functionality for a specific resource (e.g. a database).
+* **Plugins** - while this is not a layer in the same sense as the other layers, it is a component separate from everything else. It interfaces with the connector on one side and with Conduit plugins on the other and facilitates the communication between them. A Conduit plugin is a separate process that implements the interface defined in [conduit-connector-protocol](https://github.com/ConduitIO/conduit-connector-protocol) and provides the read/write functionality for a specific resource (e.g. a database).
 
-    For more see [GitHub](https://github.com/ConduitIO/conduit/blob/main/docs/architecture.md).
+For more see [GitHub](https://github.com/ConduitIO/conduit/blob/main/docs/architecture.md).

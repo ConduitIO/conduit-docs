@@ -1,0 +1,37 @@
+# What is Conduit?
+
+Conduit is a new open-source project, written in [Go](https://go.dev/), that delivers real-time data integration for developers. It aims to provide the best user experience for building and running real-time data pipelines.
+
+Out of the box, Conduit comes with:
+
+* a UI
+* common connectors
+* transforms
+* observability
+
+The 🔋 are included.
+
+#### It’s simple, yet powerful
+
+Eliminate the multi-step process you go through today. Just download the binary and start building. Conduit pipelines run in their own goroutines and are connected using Go channels. This makes Conduit pipelines incredibly performant on multi-core machines.
+
+#### It’s real-time
+
+Conduit pipelines listen for changes to a database, data warehouse, etc., and allows your data applications to act upon those changes in real-time.
+
+#### It’s flexible
+
+Conduit pipelines listen for changes to a database, data warehouse, etc., and allows your data applications to act upon those changes in real-time.
+
+#### It’s Extensible
+
+Conduit connectors are plugins that communicate with Conduit via a gRPC interface. This means that plugins can be written in any language as long as they conform to the required interface. More in-depth documentation regarding plugins is in progress!
+
+### Get Involved
+
+Here are your next steps:
+
+* [Join the Discord Community](https://discord.meroxa.com/)
+* [Request features/ ask questions about Conduit in GitHub Discussions](https://github.com/ConduitIO/conduit/discussions)
+* [Send bug reports to GitHub Issues](https://github.com/ConduitIO/conduit/issues)
+* [Show us love on Twitter](https://twitter.com/ConduitIO)

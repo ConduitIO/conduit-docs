@@ -1,4 +1,4 @@
-# Glossary
+# Vocabulary
 
 * **Pipeline** - a pipeline receives records from one or multiple source connectors, pushes them through zero or multiple processors until they reach one or multiple destination connectors.
 * **Connector** - a connector is the internal entity that communicates with a connector plugin and either pushes records from the plugin into the pipeline (source connector) or the other way around (destination connector).
