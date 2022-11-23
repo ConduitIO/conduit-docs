@@ -2,6 +2,8 @@
 
 Here is an overview of the Conduit Architecture.
 
+<figure><img src="../.gitbook/assets/conduit-diagram.png" alt=""><figcaption></figcaption></figure>
+
 Conduit is split into the following layers:
 
 * **API layer** - exposes the public APIs used to communicate with Conduit. It exposes 2 types of APIs:
