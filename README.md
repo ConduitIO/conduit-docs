@@ -15,7 +15,7 @@ If you're on Mac, it will look something like this:
 tar zxvf conduit_0.3.0_Darwin_x86_64.tar.gz
 ```
 
-1. Start Conduit:
+3\. Start Conduit:
 
 ```shell
 ./conduit
@@ -23,5 +23,9 @@ tar zxvf conduit_0.3.0_Darwin_x86_64.tar.gz
 
 **Tip**: Depending on your operating system, you may need to run `chmod +x conduit` before running the binary.
 
-1. Navigate to `http://localhost:8080` to check Conduit's UI:
-2. Build Pipelines 🚀.
+4\. Navigate to `http://localhost:8080` to check Conduit's UI.
+
+<figure><img src=".gitbook/assets/pipeline (1).png" alt=""><figcaption></figcaption></figure>
+
+5\. Build Pipelines 🚀.
+
