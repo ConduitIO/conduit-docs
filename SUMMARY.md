@@ -21,3 +21,7 @@
 ## Processors
 
 * [Getting Started](processors/getting-started.md)
+
+## Connectors
+
+* [Behavior](connectors/behavior.md)

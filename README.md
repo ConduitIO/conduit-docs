@@ -1,7 +1,5 @@
 # Getting Started
 
-
-
 Conduit is a data integration tool for software engineers. Its purpose is to help you move data from A to B. You can use Conduit to send data from Kafka to Postgres, between files and APIs, between [supported connectors](https://github.com/ConduitIO/conduit/blob/main/docs/connectors.md), and any datastore you can build a plugin for.
 
 It's written in [GoLang](https://go.dev/), compiles to a binary, and is designed to be easy to use and [deploy](https://docs.conduit.io/docs/Deploy/overview).

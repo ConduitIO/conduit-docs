@@ -1,7 +1,5 @@
 # Pipeline Semantics
 
-
-
 This document describes the inner workings of a Conduit pipeline, its structure, and behavior. It also describes a Conduit message and its lifecycle as it flows through the pipeline.
 
 **NOTE**: Some parts of this document describe behavior that is not yet fully implemented (e.g. DLQs). For more information see [#383](https://github.com/ConduitIO/conduit/pull/383). This note should be removed once the new behavior is implemented.
