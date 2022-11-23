@@ -2,6 +2,8 @@
 
 A processor is a component that operates on a single record that flows through a pipeline. It can either change the record (i.e. **transform** it) or **filter** it out based on some criteria. Since they are part of pipelines, making yourself familiar with pipeline semantics is highly recommended.
 
+<figure><img src="../.gitbook/assets/pipeline_example.svg" alt=""><figcaption></figcaption></figure>
+
 Processors are **optional** components in a pipeline, i.e. a pipeline can be started without them. They are always attached to a single parent, which can be either a connector or a pipeline. With that, we can say that we have the following types of processors:
 
 1. **Source processors**: these processors only receive messages originating at a specific source connector. Source processors are created by specifying the corresponding source connector as the parent entity.
