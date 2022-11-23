@@ -8,6 +8,8 @@ This document describes the inner workings of a Conduit pipeline, its structure,
 
 A Conduit pipeline is a directed acyclic graph of nodes. Each node runs in its own goroutine and is connected to other nodes via unbuffered Go channels that can transmit messages. In theory, we could create arbitrarily complex graphs of nodes, but for the sake of a simpler API we expose the ability to create graphs with the following structure:
 
+<figure><img src="../.gitbook/assets/pipeline_example.svg" alt=""><figcaption></figcaption></figure>
+
 In the diagram above we see 7 sections:
 
 * **Source connectors** - represents the code that communicates with a 3rd party system and continuously fetches records and sends them to Conduit (e.g. [kafka connector](https://github.com/conduitio/conduit-connector-kafka)). Every source connector is managed by a source node that receives records, wraps them in a message, and sends them downstream to the next node. A pipeline requires at least one source connector to be runnable.
