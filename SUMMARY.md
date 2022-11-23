@@ -25,3 +25,6 @@
 ## Connectors
 
 * [Behavior](connectors/behavior.md)
+* [Building Connectors](connectors/building-connectors.md)
+* [Installing Connectors](connectors/installing-connectors.md)
+* [Referencing Connectors](connectors/referencing-connectors.md)
