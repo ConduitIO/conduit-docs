@@ -1,4 +1,4 @@
-# Architecture
+# Conduit Architecture
 
 Here is an overview of the Conduit Architecture.
 

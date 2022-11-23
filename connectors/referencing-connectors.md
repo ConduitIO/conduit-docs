@@ -1,7 +1,5 @@
 # Referencing Connectors
 
-
-
 The name used to reference a connector in API requests (e.g. to create a new connector) comes in the following format:
 
 `[PLUGIN-TYPE:]PLUGIN-NAME[@VERSION]`
