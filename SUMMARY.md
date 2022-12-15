@@ -36,3 +36,5 @@
   * [Info](api-reference/info.md)
   * [Pipelines](api-reference/pipelines.md)
   * [Connectors](api-reference/connectors.md)
+  * [Plugins](api-reference/plugins.md)
+  * [Processors](api-reference/processors.md)
