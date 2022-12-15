@@ -32,3 +32,7 @@
 ***
 
 * [Connectors List](https://github.com/ConduitIO/conduit/blob/main/docs/connectors.md)
+* [API Reference](api-reference/README.md)
+  * [Info](api-reference/info.md)
+  * [Pipelines](api-reference/pipelines.md)
+  * [Connectors](api-reference/connectors.md)
